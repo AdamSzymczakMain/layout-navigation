@@ -60,4 +60,49 @@
       }
     }
   }
+
+  .main-waitlist {
+    position: relative;
+    overflow: visible;
+    max-width: 100%;
+    font-size: $font-size-small;
+    font-weight: 600;
+    height: 65px;
+
+    background-color: $color-plus;
+
+    @include flex(
+      $direction: row,
+      $justify: center,
+      $align: center,
+      $gap: 25px
+    );
+    img {
+      content: "";
+      position: absolute;
+      top: -26px;
+      left: 330px;
+      width: 100px;
+      height: 90px;
+    }
+  }
+  .waitlist-content {
+    @include flex(
+      $direction: row,
+      $justify: center,
+      $align: center,
+      $gap: 30px
+    );
+
+    button {
+      color: $color-text;
+      background-color: $color-plus;
+      padding: $padding-base;
+      padding-left: $padding-medi-plus;
+      padding-right: $padding-medi-plus;
+
+      border: 1px solid $color-text;
+      border-radius: 10px;
+    }
+  }
 }
