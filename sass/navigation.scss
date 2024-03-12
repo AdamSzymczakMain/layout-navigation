@@ -1,8 +1,5 @@
 @import "variables";
 .header {
-  max-width: $width-xxxx-large;
-  margin: auto;
-
   .main-nav {
     @include flex(
       $direction: row,

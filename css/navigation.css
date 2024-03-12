@@ -11,10 +11,6 @@ body {
   background-color: #26262b;
 }
 
-.header {
-  max-width: 1400px;
-  margin: auto;
-}
 .header .main-nav {
   display: flex;
   flex-direction: row;

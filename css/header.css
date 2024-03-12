@@ -10,3 +10,94 @@
 body {
   background-color: #26262b;
 }
+
+.header-content {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header-content h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.header-content a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.header-content .header-content-square {
+  position: absolute;
+  background-color: #e18845;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: transform 0.3s;
+  left: 130px;
+  top: 70px;
+}
+.header-content .header-content-square:hover {
+  transform: scale(1.2);
+}
+.header-content .header-content-wheel {
+  position: absolute;
+  background-color: #e57676;
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 145px;
+  bottom: 60px;
+  transform: rotate(-15deg);
+  transition: transform 0.3s;
+}
+.header-content .header-content-wheel:hover {
+  transform: scale(1.1);
+}
+.header-content .header-content-trapeze {
+  position: absolute;
+  background-color: #70d0ea;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  right: 135px;
+  top: 90px;
+  clip-path: polygon(36% 0%, 75% 0, 100% 100%, 0% 100%, 25% 0%);
+  transform: rotate(25deg);
+  transition: transform 0.3s;
+}
+.header-content .header-content-trapeze:hover {
+  transform: rotate(-25deg) scale(1.2);
+}
+.header-content .header-content-inverted-square {
+  position: absolute;
+  background-color: #83eb88;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  right: 180px;
+  bottom: 100px;
+  transform: rotate(-55deg);
+  transition: transform 0.3s;
+}
+.header-content .header-content-inverted-square:hover {
+  transform: rotate(-25deg) scale(1.1);
+}
+.header-content .header-content-inverted-square a {
+  text-align: center;
+}
