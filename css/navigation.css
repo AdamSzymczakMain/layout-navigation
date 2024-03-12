@@ -4,4 +4,63 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Robot";
+  color: #fff;
+}
+
+body {
+  background-color: #26262b;
+}
+
+.header {
+  max-width: 1400px;
+  margin: auto;
+}
+.header .main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0.7em;
+}
+.header .main-nav .img-logo {
+  width: 150px;
+  height: 50px;
+}
+.header .btn-nav {
+  color: #fff;
+  background-color: #26262b;
+  padding: 0.5em;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  font-size: 1.2em;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.header .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.header .nav-link a {
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.header .nav-link select {
+  width: 25px;
+}
+.header .nav-link .navigation-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.header .nav-link .navigation-links::after {
+  content: "";
+  right: -20px;
+  border-left: 1px solid #fff;
+  height: 20px;
 }

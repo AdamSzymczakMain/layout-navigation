@@ -4,11 +4,18 @@
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: "Robot";
+  color: #fff;
+}
+
+body {
+  background-color: #26262b;
 }
 
 // colors
 
-$color-text: #333;
+$color-main: #26262b;
+
+$color-text: #fff;
 
 $color-text-darken: darken($color-text, 5%);
 $color-text-x-darken: darken($color-text, 10%);
@@ -21,6 +28,7 @@ $color-text-xxx-lighten: lighten($color-text, 35%);
 
 $font-size-mini: 0.5em;
 $font-size-small: 1em;
+$font-size-small-plus: 1.2em;
 $font-size-base: 1.5em;
 $font-size-large: 2em;
 $font-size-base: 1.5em;
@@ -50,7 +58,9 @@ $margin-auto: auto;
 
 $padding-small: 0.3em;
 $padding-base: 0.5em;
+$padding-base-plus: 0.7em;
 $padding-medium: 1em;
+$padding-medi-plus: 1.3em;
 $padding-large: 1.5em;
 $padding-x-large: 2em;
 $padding-xx-large: 2.5em;

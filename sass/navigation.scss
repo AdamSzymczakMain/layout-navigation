@@ -1,1 +1,63 @@
 @import "variables";
+.header {
+  max-width: $width-xxxx-large;
+  margin: auto;
+
+  .main-nav {
+    @include flex(
+      $direction: row,
+      $justify: space-between,
+      $align: center,
+      $gap: 10px
+    );
+
+    padding: $padding-base-plus;
+
+    .img-logo {
+      width: 150px;
+      height: 50px;
+    }
+  }
+  .btn-nav {
+    color: $color-text;
+    background-color: $color-main;
+    padding: $padding-base;
+    padding-left: $padding-medi-plus;
+    padding-right: $padding-medi-plus;
+    font-size: $font-size-small-plus;
+    border: 1px solid $color-text;
+    border-radius: 10px;
+  }
+
+  .nav-link {
+    @include flex(
+      $direction: row,
+      $justify: center,
+      $align: center,
+      $gap: 25px
+    );
+    a {
+      font-size: $font-size-small-plus;
+      text-decoration: none;
+    }
+    select {
+      width: 25px;
+    }
+
+    .navigation-links {
+      @include flex(
+        $direction: row,
+        $justify: center,
+        $align: center,
+        $gap: 25px
+      );
+
+      &::after {
+        content: "";
+        right: -20px;
+        border-left: 1px solid #fff;
+        height: 20px;
+      }
+    }
+  }
+}
